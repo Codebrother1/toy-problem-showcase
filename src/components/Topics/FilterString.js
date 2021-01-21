@@ -14,21 +14,9 @@ import React, { Component } from 'react'
   
       };
     }
-
-
-
-
-
-
-
-
-
   render(){
     return(
-
-      <div>
-          <p>FilterString Component</p>
-          <div className="puzzleBox filterStringPB"></div>
+        <div className="puzzleBox filterStringPB">
           <span className="puzzleText"></span>
           <input type="text" className="inputLine" onChange={this.state.userInput}/>
           <button className="confirmationButton" onClick={}></button>

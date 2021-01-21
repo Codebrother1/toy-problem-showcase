@@ -13,10 +13,6 @@ class EvenAndOdds extends Component{
     };
   }
 
-
-
-
-
   render(){
     return(
      
