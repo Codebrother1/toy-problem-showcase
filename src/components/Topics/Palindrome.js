@@ -2,10 +2,30 @@ import React, { Component } from 'react'
 
 
 
-class Palindrome extends Component{
+
+
+  class Palindrome extends Component{
+    constructor(props) {
+      super(props);
+    this.state = {
+      
+        userInput: "",
+        palindrome: ""
+  
+      };
+    }
   render(){
     return(
-      <p>Palindrome Component</p>
+
+      <div>
+         
+          <div className="puzzleBox filterStringPB"></div>
+          <input type="text" className="inputLine" onChange={this.state.userInput}/>
+          <button className="confirmationButton" onClick={}></button>
+          <span className="resultsBox"></span>
+          <h4>Palindrome</h4>
+      </div>
+    
     )
   }
 }

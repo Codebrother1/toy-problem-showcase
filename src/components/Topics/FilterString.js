@@ -2,10 +2,40 @@ import React, { Component } from 'react'
 
 
 
-class FilterString extends Component{
+
+
+  class FilterString extends Component{
+    constructor(props) {
+      super(props);
+    this.state = {
+        unFilteredArray: ["", "", ""],
+        userInput: "",
+        filteredArray: [],
+  
+      };
+    }
+
+
+
+
+
+
+
+
+
   render(){
     return(
-      <p>FilterString Component</p>
+
+      <div>
+          <p>FilterString Component</p>
+          <div className="puzzleBox filterStringPB"></div>
+          <span className="puzzleText"></span>
+          <input type="text" className="inputLine" onChange={this.state.userInput}/>
+          <button className="confirmationButton" onClick={}></button>
+          <span className="resultsBox filterStringRB"></span>
+          <h4>Filter String</h4>
+      </div>
+    
     )
   }
 }
